@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    
+</head>
+<body>
+    <h1>Planet List</h1>
+    <div class="search-bar">
+        <input id="searchInput" type="text" placeholder="Ketikkan nama planet yang ingin kamu cari..." size="50"/>
+        <br/>
+        <button onclick="cariPlanet()">Cari</button>
+        <button onclick="tampilTable()">Tampilkan Tabel</button>
+        <button onclick="hilangkanTable()">Sembunyikan Tabel</button>
+        <br/>
+        <br/>
+    </div>
+    <table cellpadding="10" 
+        cellspacing="0" 
+        border="1" 
+        bgcolor="#fdfdfd" 
+        align="center"
+        id="planetTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Rotation Period</th>
+            <th>Orbital Period</th>
+            <th>Diameter</th>
+            <th>Climate</th>
+            <th>Gravity</th>
+            <th>Terrain</th>
+            <th>Surface Water</th>
+            <th>Population</th>
+            <th>Residents</th>
+            <th>Films</th>
+            <th>Created</th>
+            <th>Edited</th>
+            <th>URL</th>
+        </tr>
+    </thead>
+        <tbody id="tableData" align="center"></tbody>
+    </table>
+    <script src="Exercise3.js"></script>
+    <script>
+            function cariPlanet() {
+                // Belum nemu cara buat nampilin per-row jadi di kosongin dulu
+                // Kalau sudah dapat, akan di update 
+            }
+            function tampilTable(){
+                document.getElementById("planetTable").style.display="inline-block";
+            }
+            function hilangkanTable(){
+                document.getElementById("planetTable").style.display="none";
+            }
+
+            hilangkanTable();
+
+        
+    </script>
+</body>
+</html>
